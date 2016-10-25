@@ -1,0 +1,2 @@
+# singlepageapplication
+application using spa
