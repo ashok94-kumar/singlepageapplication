@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="singlePageApp">
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+        crossorigin="anonymous">
+
+ 
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular-route.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" >Angular Routing Example</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="main">
+  
+    
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+  
+  <footer class="text-center">
+    <p>Share this on your site <a href="http://www.facebook.com">facebook</a></p>
+  
+    <p>View a tutorial on <a href="http://www.angularjs.org">Animating Your Angular Single Page App</a></p>
+  </footer>
+  
+</body>
+
+</html>
